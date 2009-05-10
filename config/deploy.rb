@@ -1,13 +1,13 @@
 default_run_options[:pty] = true
 
 # be sure to change these
-set :user, 'agilities'
-set :domain, 'discipline.es'
+set :user, 'rails'
+set :domain, 'shiftrefresh.net'
 set :application, 'seinfeld'
 
 # the rest should be good
-set :repository,  "git@github.com:krrh/#{application}.git" 
-set :deploy_to, "/home/#{user}/#{domain}" 
+set :repository,  "git@github.com:tedkulp/#{application}.git" 
+set :deploy_to, "/var/www/shiftrefresh.net/seinfeld" 
 set :deploy_via, :remote_cache
 set :scm, 'git'
 set :branch, 'master'
